@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Numbers";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+@using viewModelFun.Models;
+@model Numbers;
+<div class="container">
+    @foreach(var i in @Model.numbers)
+    {
+        <h4>@i</h4>
+    }
+</div>
+
